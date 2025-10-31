@@ -70,7 +70,7 @@ export default function DreamXecLanding() {
 
                         <div className="mt-8 pt-6 border-t-2 border-green-200">
                             <p className="text-sm font-medium text-gray-600 italic">
-                                "Research karega India,<br />tabhi toh aage badhega India"
+                                "Research karega India,<br />Toh Badega India"
                             </p>
                         </div>
                     </div>
