@@ -22,7 +22,7 @@ export default function DreamXecLanding() {
                         phone: formData.phone
                     })
                 });
-                
+
                 setSubmitted(true);
             } catch (error) {
                 console.error('Error submitting form:', error);
@@ -47,16 +47,16 @@ export default function DreamXecLanding() {
                     </div>
 
                     <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
-                        Thank You! 🚀
+                        Thank You!
                     </h1>
 
                     <p className="text-xl text-gray-600">
                         We've received your information
                     </p>
 
-                    <div className="bg-white rounded-2xl shadow-xl p-8 border-2 border-orange-200">
+                    <div className="bg-white flex flex-col items-center rounded-2xl shadow-xl p-8 border-2 border-orange-200">
                         <p className="text-lg text-gray-700 mb-6">
-                            To help us serve you better, please fill out our detailed form:
+                            To help us serve you better, please fill out our detailed form below :
                         </p>
 
                         <a
@@ -65,12 +65,21 @@ export default function DreamXecLanding() {
                             rel="noopener noreferrer"
                             className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold px-8 py-4 rounded-xl hover:from-orange-600 hover:to-orange-700 transition-all transform hover:scale-105 shadow-lg"
                         >
-                            Fill This Form to Help Us Help You
+                            Fill This Form to Help Us Help You (For Students)
+                        </a>
+
+                        <a
+                            href="https://forms.gle/KWwgYVtXJVhxwGNJ7"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block mt-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold px-8 py-4 rounded-xl hover:from-orange-600 hover:to-orange-700 transition-all transform hover:scale-105 shadow-lg"
+                        >
+                            Fill This Form to Help Us Help You (For Donors/Mentors/Corporates)
                         </a>
 
                         <div className="mt-8 pt-6 border-t-2 border-green-200">
                             <p className="text-sm font-medium text-gray-600 italic">
-                                "Research karega India,<br />Toh Badega India"
+                                "Research karega India,<br />Toh Badhega India"
                             </p>
                         </div>
                     </div>
@@ -112,7 +121,7 @@ export default function DreamXecLanding() {
 
                         <div className="pt-4">
                             <p className="text-lg font-medium text-gray-700 italic border-l-4 border-orange-500 pl-4 bg-orange-50 py-3 rounded">
-                                "Research karega India,<br />tabhi toh aage badhega India"
+                                "Research karega India,<br />Toh Badhega India"
                             </p>
                         </div>
                     </div>
@@ -139,6 +148,24 @@ export default function DreamXecLanding() {
                                     />
                                 </div>
                             </div>
+
+                            <div>
+                                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                                    Are you a Student or a Donor/Mentor/Corporate?
+                                </label>
+                                <div className="relative">
+                                    <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+                                    <input
+                                        type="text"
+                                        value={formData.role}
+                                        onChange={(e) => handleChange('role', e.target.value)}
+                                        placeholder="Student / Donor / Mentor / Corporate"
+                                        className="w-full pl-12 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:border-orange-500 focus:outline-none transition-colors"
+                                        disabled={isSubmitting}
+                                    />
+                                </div>
+                            </div>
+
 
                             <div>
                                 <label className="block text-sm font-semibold text-gray-700 mb-2">
