@@ -74,7 +74,7 @@ export default function DreamXecLanding() {
                             rel="noopener noreferrer"
                             className="inline-block mt-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold px-8 py-4 rounded-xl hover:from-orange-600 hover:to-orange-700 transition-all transform hover:scale-105 shadow-lg"
                         >
-                            Fill This Form to Help Us Help You (For Donors/Mentors/Corporates)
+                            Fill This Form to Help Us Help You (For Donors)
                         </a>
 
                         <div className="mt-8 pt-6 border-t-2 border-green-200">
@@ -151,7 +151,7 @@ export default function DreamXecLanding() {
 
                             <div>
                                 <label className="block text-sm font-semibold text-gray-700 mb-2">
-                                    Are you a Student or a Donor/Mentor/Corporate?
+                                    Are you Student or Donor?
                                 </label>
                                 <div className="relative">
                                     <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
