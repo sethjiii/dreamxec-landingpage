@@ -92,34 +92,35 @@ export default function DreamXecLanding() {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-green-50">
-            <header className="relative flex justify-center items-center pt-6 pb-2 md:pt-8 md:pb-3 overflow-hidden">
-                {/* Animated background text */}
-                <motion.h1
-                    initial={{ opacity: 0, scale: 1.2 }}
-                    animate={{ opacity: [0.2, 0.4, 0.2], scale: [1.1, 1, 1.1] }}
-                    transition={{
-                        duration: 6,
-                        ease: "easeInOut",
-                        repeat: Infinity,
-                    }}
-                    className="absolute text-[14vw] md:text-[10vw] font-extrabold text-blue-100 select-none leading-none text-center z-0"
-                >
-                    Coming Soon
-                </motion.h1>
+            <header className="relative flex flex-col items-center justify-center pt-10 pb-6 md:pt-14 md:pb-8 text-center overflow-hidden">
 
                 {/* Animated logo */}
                 <motion.div
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.2, ease: "easeOut" }}
-                    className="relative z-10"
+                    className="z-10 mb-2 md:mb-4"
                 >
                     <img
                         src="/dx-logo-2.png"
                         alt="DreamXec Logo"
-                        className="w-60 h-60 md:w-64 md:h-64 lg:w-80 lg:h-80 object-contain"
+                        className="w-56 h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 object-contain mx-auto"
                     />
                 </motion.div>
+
+                {/* Animated “Coming Soon” text */}
+                <motion.h1
+                    initial={{ opacity: 0, scale: 1.2 }}
+                    animate={{ opacity: [1, 1, 1], scale: [1.1, 1, 1.1] }}
+                    transition={{
+                        duration: 6,
+                        ease: "easeInOut",
+                        repeat: Infinity,
+                    }}
+                    className="text-[12vw] md:text-[8vw] font-extrabold text-blue-100 md:text-blue-200 leading-none tracking-tight"
+                >
+                    Coming Soon
+                </motion.h1>
             </header>
 
 
